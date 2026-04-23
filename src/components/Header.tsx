@@ -50,9 +50,9 @@ export function Header() {
       {/* Main nav */}
       <nav className="transition-all duration-300" style={{ backgroundColor: "#b91c1c" }}>
         <div className="flex items-center justify-between px-3 sm:px-4 py-4">
-          <Link href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-xl font-bold tracking-widest text-white font-heading">THE NYC</span>
-            <span className="text-xl font-bold tracking-widest text-yellow-200 font-heading">TOWING SERVICE</span>
+          <Link href="/" className="flex items-center gap-1 shrink min-w-0">
+            <span className="text-sm sm:text-lg lg:text-xl font-bold tracking-wider sm:tracking-widest text-white font-heading whitespace-nowrap">THE NYC</span>
+            <span className="text-sm sm:text-lg lg:text-xl font-bold tracking-wider sm:tracking-widest text-yellow-200 font-heading whitespace-nowrap">TOWING SERVICE</span>
           </Link>
 
           <div className="hidden items-center justify-center gap-6 lg:flex flex-1">
@@ -142,8 +142,8 @@ export function Header() {
             </Link>
           </div>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="relative z-[60] flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 lg:hidden">
-            <span className="text-sm font-medium text-white font-cta">{mobileOpen ? "Close" : "Menu"}</span>
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="relative z-[60] shrink-0 flex items-center gap-2 rounded-full border border-white/30 px-3 py-1.5 sm:px-4 sm:py-2 lg:hidden">
+            <span className="text-xs sm:text-sm font-medium text-white font-cta">{mobileOpen ? "Close" : "Menu"}</span>
           </button>
         </div>
       </nav>
