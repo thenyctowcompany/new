@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import { notFound } from "next/navigation";
@@ -9,7 +8,6 @@ import { SERVICES } from "@/data/services";
 import { cityPageContent } from "@/data/content-templates";
 import { getOfficeByState } from "@/data/offices";
 import { OfficeBlock } from "@/components/OfficeBlock";
-import { getBoroughImage } from "@/lib/borough-images";
 import { JsonLd, breadcrumbSchema, localBusinessSchemaPerOffice, placeSchema } from "@/lib/schema";
 
 function isBoroughGuide(slug: string) {
@@ -79,14 +77,6 @@ export default async function CityPage({ params }: { params: Promise<{ state: st
       <>
         <JsonLd schema={guideSchemas} />
         <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-          <Image
-            src={getBoroughImage(state.slug, 2000)}
-            alt={`${state.name}, NYC — towing coverage area`}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-25 mix-blend-luminosity"
-          />
           <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
           <div className="absolute inset-0 grid-bg opacity-30" />
           <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -186,14 +176,6 @@ export default async function CityPage({ params }: { params: Promise<{ state: st
       <JsonLd schema={citySchemas} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={getBoroughImage(state.slug, 2000)}
-          alt={`${city.name}, ${state.name} — local towing coverage`}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">

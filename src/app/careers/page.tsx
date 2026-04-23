@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { EMAIL, CITY_COUNT, STATE_COUNT } from "@/data/content";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -21,14 +19,6 @@ export default function CareersPage() {
         ])}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.driverHardhat, 2000)}
-          alt="Professional tow driver at work in NYC"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -65,14 +55,7 @@ export default function CareersPage() {
       <section className="bg-section-teal py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="relative mx-auto mb-12 aspect-[16/6] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={unsplash(IMG.mechanicHands, 1600)}
-              alt="NYC tow and roadside technician working on a vehicle"
-              fill
-              sizes="(max-width: 768px) 100vw, 900px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <h2 className="text-center text-3xl font-bold text-slate-900 font-heading">Why Work Here</h2>
           <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700">
             <p><strong>W-2 employment, not gig.</strong> Proper tax withholding, workers&apos; compensation, and full benefits for full-time roles. No 1099 games, no &quot;independent contractor&quot; runarounds.</p>

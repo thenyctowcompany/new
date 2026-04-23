@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { PHONE, PHONE_HREF, CITY_COUNT, STATE_COUNT } from "@/data/content";
 import { SERVICES, SERVICE_CATEGORIES } from "@/data/services";
 import { CtaButtons } from "@/components/CtaButtons";
-import { IMG, unsplash } from "@/lib/images";
-import { getServiceImage } from "@/lib/service-images";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -39,14 +36,6 @@ export default function ServicesPage() {
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.towTruckFlatbed, 2000)}
-          alt="Flatbed tow truck on a NYC street"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -89,14 +78,7 @@ export default function ServicesPage() {
                 {services.map((service) => (
                   <Link key={service.slug} href={`/services/${service.slug}`} className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:border-teal-400 hover:shadow-md h-full">
                     <div className="relative aspect-[16/9] overflow-hidden">
-                      <Image
-                        src={getServiceImage(service.slug, 800)}
-                        alt={`${service.title} — ${service.subtitle}`}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
+                      </div>
                     <div className="flex flex-col p-6">
                       <h3 className="text-base font-bold text-slate-900 font-heading group-hover:text-teal-700 transition-colors">{service.title}</h3>
                       <p className="mt-1 text-xs font-semibold text-teal-600">{service.subtitle}</p>

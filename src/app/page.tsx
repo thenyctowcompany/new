@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import {
@@ -18,9 +17,6 @@ import {
   STATES,
 } from "@/data/content";
 import { STATES as BOROUGHS } from "@/data/cities";
-import { IMG, unsplash } from "@/lib/images";
-import { getBoroughImage } from "@/lib/borough-images";
-import { getServiceImage } from "@/lib/service-images";
 import { OFFICES } from "@/data/offices";
 import { JsonLd, allOfficeLocalBusinessSchemas, faqPageSchema } from "@/lib/schema";
 
@@ -42,7 +38,6 @@ export default function HomePage() {
           loop
           playsInline
           preload="metadata"
-          poster={unsplash(IMG.nycManhattanStreet, 2000)}
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-50"
         />
@@ -164,8 +159,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("jump-start", 1200)} alt="Jump start service in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Roadside — We Will Get You Running in Minutes</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Jump Start and Dead Battery Service</h3>
@@ -190,8 +184,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("light-duty-towing", 1200)} alt="Light-duty towing in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Cars, Sedans, and Small SUVs</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Light-Duty Towing Across the Five Boroughs</h3>
@@ -216,8 +209,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("flat-tire-change", 1200)} alt="Flat tire change in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Spare Mounted or Plug and Patch</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Flat Tire Change and Tire Service in NYC</h3>
@@ -242,8 +234,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("lockout-service", 1200)} alt="Lockout service in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Keys Locked Inside, We Will Get You In</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Lockout Service Across NYC, Day or Night</h3>
@@ -268,8 +259,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("flatbed-towing", 1200)} alt="Flatbed towing in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Luxury, AWD, EV, and Long-Distance</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Flatbed Towing for AWD, EVs, and Luxury Vehicles</h3>
@@ -294,8 +284,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("gas-delivery", 1200)} alt="Gas delivery in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Out of Gas, We Bring Two Gallons</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Gas Delivery on Every Bridge, Tunnel, and Highway</h3>
@@ -320,8 +309,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("accident-recovery", 1200)} alt="Accident recovery in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Post-Crash Scene Management</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Accident Recovery and Collision Towing</h3>
@@ -346,8 +334,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("heavy-duty-towing", 1200)} alt="Heavy-duty towing in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Trucks, Vans, and Large SUVs</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Heavy-Duty Towing for Commercial Vehicles</h3>
@@ -372,8 +359,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("motorcycle-towing", 1200)} alt="Motorcycle towing in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Flatbed and Chocked Transport</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Motorcycle Towing for Every Kind of Bike</h3>
@@ -398,8 +384,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getServiceImage("emergency-247-towing", 1200)} alt="Emergency 24/7 towing in NYC" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Any Hour, Any Day, Any Borough</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Emergency 24/7 Towing Across NYC</h3>
@@ -447,8 +432,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getBoroughImage("manhattan", 1200)} alt="Manhattan, NYC — Midtown dispatch hub" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Midtown Hub — Empire State Building</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Manhattan Towing and Roadside</h3>
@@ -475,8 +459,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getBoroughImage("brooklyn", 1200)} alt="Brooklyn, NYC — Downtown Brooklyn dispatch hub" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Downtown Brooklyn Hub — MetroTech Center</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Brooklyn Towing and Roadside</h3>
@@ -503,8 +486,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getBoroughImage("queens", 1200)} alt="Queens, NYC — Long Island City dispatch hub" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">LIC Hub — One Court Square</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Queens Towing and Roadside</h3>
@@ -531,8 +513,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getBoroughImage("bronx", 1200)} alt="Bronx, NYC — Mott Haven dispatch hub" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Mott Haven Hub — BankNote Building</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Bronx Towing and Roadside</h3>
@@ -559,8 +540,7 @@ export default function HomePage() {
             <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="grid grid-cols-1 gap-0 lg:grid-cols-5">
                 <div className="relative aspect-[16/10] lg:col-span-2 lg:aspect-auto">
-                  <Image src={getBoroughImage("staten-island", 1200)} alt="Staten Island, NYC — Bloomfield dispatch hub" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-                </div>
+                                  </div>
                 <div className="p-6 sm:p-8 lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 font-cta">Bloomfield Hub — Corporate Park of Staten Island</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 font-heading">Staten Island Towing and Roadside</h3>
@@ -731,8 +711,7 @@ export default function HomePage() {
           </p>
 
           <div className="relative mx-auto mt-10 aspect-[16/7] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image src={unsplash(IMG.towTruckFlatbed, 1600)} alt="Flatbed tow truck loading a vehicle on a NYC street" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
-          </div>
+                      </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-slate-200 bg-white p-6">
@@ -969,8 +948,7 @@ export default function HomePage() {
             {BOROUGHS.map((b) => (
               <Link key={b.slug} href={`/locations/${b.slug}`} className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:border-teal-400 hover:shadow-md">
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image src={getBoroughImage(b.slug, 800)} alt={`${b.name}, NYC — towing coverage area`} fill sizes="(max-width: 768px) 100vw, 20vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
+                                  </div>
                 <div className="p-5 text-center">
                   <h3 className="text-lg font-bold text-slate-900 font-heading group-hover:text-teal-700 transition-colors">{b.name}</h3>
                   <p className="mt-1 text-xs text-slate-500">{b.cities.length} neighborhoods</p>
@@ -1084,8 +1062,7 @@ export default function HomePage() {
             </div>
             <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
               <div className="relative aspect-[4/3]">
-                <Image src={unsplash(IMG.warehouseFleet, 1200)} alt="Commercial vehicle fleet staged at an NYC facility" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
-              </div>
+                              </div>
               <ul className="space-y-3 p-6 text-sm text-slate-700">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-teal-600" />

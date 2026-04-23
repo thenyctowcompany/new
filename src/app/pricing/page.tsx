@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import { PHONE, PHONE_HREF, PRICING } from "@/data/content";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema, SITE_URL, BRAND_NAME } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -53,14 +51,6 @@ export default function PricingPage() {
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.nycAerial, 2000)}
-          alt="Aerial view of NYC at night"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -118,14 +108,7 @@ export default function PricingPage() {
       <section className="bg-section-teal py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="relative mx-auto mb-12 aspect-[16/6] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={unsplash(IMG.towTruckHookup, 1600)}
-              alt="Tow truck driver hooking up a vehicle in NYC"
-              fill
-              sizes="(max-width: 768px) 100vw, 900px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <h2 className="text-center text-3xl font-bold text-slate-900 font-heading">What&apos;s Included In Every Rate</h2>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
             {[

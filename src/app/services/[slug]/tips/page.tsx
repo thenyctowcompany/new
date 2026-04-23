@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaButtons } from "@/components/CtaButtons";
 import { PHONE } from "@/data/content";
 import { SERVICES, SERVICE_CATEGORIES } from "@/data/services";
-import { getServiceImage } from "@/lib/service-images";
 import { getServiceTips, parseLinks, type TextPart } from "@/data/service-tips";
 import { JsonLd, breadcrumbSchema, howToSchema, articleSchema, faqPageSchema } from "@/lib/schema";
 
@@ -111,14 +109,6 @@ export default async function ServiceTipsPage({ params }: { params: Promise<{ sl
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={getServiceImage(service.slug, 2000)}
-          alt={`How to handle ${service.title.toLowerCase()} in NYC`}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">

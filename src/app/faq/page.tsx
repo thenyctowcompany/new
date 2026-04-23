@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { PHONE, PHONE_HREF, SMS_HREF } from "@/data/content";
 import { CtaButtons } from "@/components/CtaButtons";
-import { IMG, unsplash } from "@/lib/images";
 import { FAQ } from "@/data/content";
 import { JsonLd, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
@@ -61,14 +59,6 @@ export default function FAQPage() {
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.nycBrooklynBridge, 2000)}
-          alt="Brooklyn Bridge at dusk — NYC towing FAQ backdrop"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-20 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">

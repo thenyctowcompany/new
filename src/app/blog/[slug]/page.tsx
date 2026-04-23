@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BLOG_POSTS } from "@/data/blog-posts";
@@ -53,14 +52,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         ]}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={post.heroImage ?? getBlogImage(post.slug, 2000)}
-          alt={post.title}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -81,14 +72,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="mx-auto max-w-3xl px-6">
           {/* Article lead image */}
           <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={post.heroImage ?? getBlogImage(post.slug, 1400)}
-              alt={post.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 700px"
-              className="object-cover"
-            />
-          </div>
+            </div>
 
           {/* Audio reader */}
           <div className="mb-8 flex items-center justify-between">

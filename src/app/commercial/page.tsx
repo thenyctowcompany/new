@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import { SERVICES } from "@/data/services";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -24,14 +22,6 @@ export default function CommercialPage() {
         ])}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.warehouseFleet, 2000)}
-          alt="Commercial fleet staged at a NYC warehouse"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -62,14 +52,7 @@ export default function CommercialPage() {
       <section className="bg-section-teal py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="relative mx-auto mb-12 aspect-[16/6] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={unsplash(IMG.truckRoad, 1600)}
-              alt="Heavy-duty commercial truck on the highway"
-              fill
-              sizes="(max-width: 768px) 100vw, 900px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <h2 className="text-center text-3xl font-bold text-slate-900 font-heading">Why Fleets Run With Us</h2>
           <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700">
             <p>A down fleet vehicle is a real revenue drain — lost route revenue, driver overtime to cover, and the administrative cost of coordinating a retail tow. Retail dispatch puts your truck behind a queue of one-off calls. National roadside networks add dispatch markup and route through subcontractors who may or may not actually know NYC. Fleet accounts with us eliminate both problems.</p>

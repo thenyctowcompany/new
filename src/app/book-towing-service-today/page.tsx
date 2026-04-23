@@ -1,10 +1,8 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import Image from "next/image";
 import { PHONE, PHONE_HREF, EMAIL, HOURS } from "@/data/content";
 import { AddressAutocomplete } from "@/components/AddressAutocomplete";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export default function BookPage() {
@@ -67,14 +65,6 @@ export default function BookPage() {
         ])}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.towTruckNight, 2000)}
-          alt="Tow truck responding on a NYC street at night"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">

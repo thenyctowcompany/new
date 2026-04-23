@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { PHONE, PHONE_HREF, CITY_COUNT, STATE_COUNT } from "@/data/content";
 import { SERVICES } from "@/data/services";
 import { CtaButtons } from "@/components/CtaButtons";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema, SITE_URL, BRAND_NAME } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -39,14 +37,6 @@ export default function AboutPage() {
       />
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.nycSkylineYellowCab, 2000)}
-          alt="Yellow cabs on a Manhattan street"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -132,14 +122,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-center text-3xl font-bold text-slate-900 font-heading">The People Who Show Up</h2>
           <div className="relative mx-auto mt-8 aspect-[16/7] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={unsplash(IMG.driverTeam, 1600)}
-              alt="Professional tow driver team on the job"
-              fill
-              sizes="(max-width: 768px) 100vw, 900px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-base leading-relaxed text-slate-700">
             <p>Our drivers are W-2 employees — not gig workers, not 1099 contractors, not &quot;independent operators.&quot; That matters because it means consistent training, accountability, and service standards. When we say a driver is trained on EV procedures or AWD handling, it&apos;s because they completed our training program, not because a dispatch system randomly picked someone from a gig pool.</p>
             <p>Every driver is background-checked, trained on every common vehicle platform, and covered by our insurance. They carry identification and arrive in branded vehicles. They understand NYC-specific hazards — streetcar tracks, bike-lane concrete curbing, low-clearance parking garages, and narrow one-way streets that don&apos;t fit a full flatbed.</p>

@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import { notFound } from "next/navigation";
 import { PHONE, PHONE_HREF, CITY_COUNT } from "@/data/content";
 import { SERVICES, SERVICE_CATEGORIES, getExtendedContent } from "@/data/services";
 import { getLinkifiedExtendedContent } from "@/data/services-links";
-import { getServiceImage } from "@/lib/service-images";
 import { getServiceTips } from "@/data/service-tips";
 import { getServiceFAQs } from "@/data/service-faq";
 import { STATES } from "@/data/cities";
@@ -128,14 +126,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={getServiceImage(service.slug, 2000)}
-          alt={`${service.title} in NYC — ${service.subtitle}`}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -164,14 +154,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className="bg-section-white py-16">
         <div className="mx-auto max-w-3xl px-6">
           <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={getServiceImage(service.slug, 1400)}
-              alt={`${service.title} service in action across NYC`}
-              fill
-              sizes="(max-width: 768px) 100vw, 700px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <h2 className="mt-10 text-center text-3xl font-bold text-slate-900 font-heading">
             About {service.title}
           </h2>

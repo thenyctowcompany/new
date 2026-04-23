@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { EMAIL } from "@/data/content";
-import { IMG, unsplash } from "@/lib/images";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -21,14 +19,6 @@ export default function FranchisePage() {
         ])}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.handshakeBusiness, 2000)}
-          alt="Business partnership handshake — NYC towing franchise"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -53,14 +43,7 @@ export default function FranchisePage() {
       <section className="bg-section-teal py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="relative mx-auto mb-12 aspect-[16/6] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src={unsplash(IMG.carFleet, 1600)}
-              alt="Fleet of partner vehicles lined up at a service yard"
-              fill
-              sizes="(max-width: 768px) 100vw, 900px"
-              className="object-cover"
-            />
-          </div>
+            </div>
           <h2 className="text-center text-3xl font-bold text-slate-900 font-heading">What You Get</h2>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[

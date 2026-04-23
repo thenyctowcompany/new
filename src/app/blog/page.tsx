@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { CtaButtons } from "@/components/CtaButtons";
 import { BLOG_POSTS } from "@/data/blog-posts";
-import { IMG, unsplash } from "@/lib/images";
-import { getBlogImage } from "@/lib/blog-images";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -33,14 +30,6 @@ export default function BlogPage() {
         ]}
       />
       <section className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 pt-36 pb-16 sm:pt-44 sm:pb-24">
-        <Image
-          src={unsplash(IMG.nycNightSkyline, 2000)}
-          alt="NYC skyline at night — towing and roadside guides"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-25 mix-blend-luminosity"
-        />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-teal-600/80 to-teal-800/90" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
@@ -64,14 +53,7 @@ export default function BlogPage() {
             {BLOG_POSTS.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:border-teal-400 hover:shadow-md h-full flex flex-col">
                 <div className="relative aspect-[16/9] overflow-hidden">
-                  <Image
-                    src={post.heroImage ?? getBlogImage(post.slug, 800)}
-                    alt={post.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
+                  </div>
                 <div className="flex flex-col p-6 flex-1">
                   <div className="flex items-center gap-2">
                     <span className="rounded-full bg-teal-50 px-2.5 py-0.5 text-xs text-teal-700">{post.category}</span>
