@@ -12,7 +12,7 @@ import { PRICING } from "@/data/content";
 import { OFFICES, type Office } from "@/data/offices";
 import { SERVICES, SERVICE_CATEGORIES, type Service } from "@/data/services";
 
-export const SITE_URL = "https://thenyctowingservice.com";
+export const SITE_URL = "https://www.thenyctowingservice.com";
 export const BRAND_NAME = "The NYC Towing Service";
 export const LOGO_URL = `${SITE_URL}/icon`;
 

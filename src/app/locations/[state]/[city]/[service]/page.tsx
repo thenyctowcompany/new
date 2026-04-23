@@ -17,18 +17,10 @@ function isTipsSlug(slug: string) {
 }
 
 export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  const allCities = getAllCities();
-  const params: { state: string; city: string; service: string }[] = [];
-  for (const { state, city } of allCities) {
-    for (const service of SERVICES) {
-      params.push({ state: state.slug, city: city.slug, service: service.slug });
-    }
-    const tipsSlug = `towing-in-${city.slug}-guide-and-pricing`;
-    params.push({ state: state.slug, city: city.slug, service: tipsSlug });
-  }
-  return params;
+  return [];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ state: string; city: string; service: string }> }): Promise<Metadata> {

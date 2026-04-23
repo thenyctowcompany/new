@@ -12,16 +12,10 @@ import { customerCityContent } from "@/data/customer-content";
 import { JsonLd, breadcrumbSchema, localBusinessSchemaPerOffice, serviceSchema } from "@/lib/schema";
 
 export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  const allCities = getAllCities();
-  const params: { type: string; state: string; city: string }[] = [];
-  for (const ct of CUSTOMER_TYPES) {
-    for (const { state, city } of allCities) {
-      params.push({ type: ct.slug, state: state.slug, city: city.slug });
-    }
-  }
-  return params;
+  return [];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ type: string; state: string; city: string }> }): Promise<Metadata> {
