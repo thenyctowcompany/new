@@ -4,6 +4,7 @@ import { Sora, DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MobileStickyBar } from "@/components/MobileStickyBar";
 import { JsonLd, organizationSchema } from "@/lib/schema";
 
 const sora = Sora({ variable: "--font-sora", subsets: ["latin"] });
@@ -42,8 +43,9 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <JsonLd schema={organizationSchema()} />
         <Header />
-        <main>{children}</main>
+        <main className="pb-20 lg:pb-0">{children}</main>
         <Footer />
+        <MobileStickyBar />
         <Script
           id="tawk-to"
           strategy="afterInteractive"

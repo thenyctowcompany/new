@@ -27,9 +27,9 @@ export function Header() {
     <div className="fixed top-0 left-0 right-0 z-40">
       {/* Top bar */}
       <div className="bg-slate-900">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
           <div className="flex items-center gap-3 sm:hidden">
-            <a href={PHONE_HREF} className="text-xs font-semibold text-yellow-400 font-cta">Call {PHONE}</a>
+            <a href={PHONE_HREF} className="text-sm font-bold text-yellow-400 font-cta">📞 Call {PHONE}</a>
           </div>
           <div className="hidden items-center gap-1.5 overflow-x-auto sm:flex">
             <span className="shrink-0 text-xs font-semibold text-slate-500 font-cta">Neighborhoods:</span>
@@ -42,7 +42,7 @@ export function Header() {
             <Link href="/commercial" className="shrink-0 text-xs font-semibold text-yellow-400 transition-colors hover:text-yellow-300 font-cta">Fleet & Commercial</Link>
           </div>
           <div className="hidden items-center gap-3 shrink-0 sm:flex">
-            <a href={PHONE_HREF} className="text-xs font-semibold text-yellow-400 transition-colors hover:text-yellow-300 font-cta">24/7 Dispatch — {PHONE}</a>
+            <a href={PHONE_HREF} className="text-sm font-bold text-yellow-400 transition-colors hover:text-yellow-300 font-cta">24/7 Dispatch — {PHONE}</a>
           </div>
         </div>
       </div>
