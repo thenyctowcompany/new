@@ -160,6 +160,20 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} The NYC Towing Service. All rights reserved.</p>
           <p>Licensed, Bonded &amp; Insured — NYC DCWP Licensed Tow Operator</p>
         </div>
+        <div className="mt-4 pt-4 border-t border-slate-800/50 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500 text-center">
+          <p>
+            Website designed by{" "}
+            <a href="https://www.thenycmarketingcompany.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors underline">
+              The NYC Marketing Company
+            </a>
+          </p>
+          <p>
+            CRM by{" "}
+            <a href="https://homeservicesbusinesscrm.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors underline">
+              Full Loop CRM
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
