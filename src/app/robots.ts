@@ -9,11 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: [
-      "https://www.thenyctowingservice.com/sitemap/0.xml",
-      "https://www.thenyctowingservice.com/sitemap/1.xml",
-      "https://www.thenyctowingservice.com/sitemap/2.xml",
-    ],
+    sitemap: "https://www.thenyctowingservice.com/sitemap.xml",
     host: "https://www.thenyctowingservice.com",
   };
 }

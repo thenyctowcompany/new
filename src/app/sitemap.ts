@@ -6,8 +6,6 @@ import { BLOG_POSTS } from "@/data/blog-posts";
 
 const SITE = "https://www.thenyctowingservice.com";
 
-const CHUNK_SIZE = 25000;
-
 function buildAllEntries(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
@@ -142,17 +140,6 @@ function buildAllEntries(): MetadataRoute.Sitemap {
   return entries;
 }
 
-export async function generateSitemaps() {
-  const total = buildAllEntries().length;
-  const count = Math.ceil(total / CHUNK_SIZE);
-  return Array.from({ length: count }, (_, i) => ({ id: i }));
-}
-
-export default async function sitemap(props: {
-  id: Promise<string>;
-}): Promise<MetadataRoute.Sitemap> {
-  const id = Number(await props.id);
-  const all = buildAllEntries();
-  const start = id * CHUNK_SIZE;
-  return all.slice(start, start + CHUNK_SIZE);
+export default function sitemap(): MetadataRoute.Sitemap {
+  return buildAllEntries();
 }
