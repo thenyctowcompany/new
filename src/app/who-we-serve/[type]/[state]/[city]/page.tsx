@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const result = getCityBySlug(stateSlug, citySlug);
   if (!ct || !result) return {};
   return {
-    title: `Towing & Roadside for ${ct.name} in ${result.city.name}, ${result.state.abbreviation}`,
-    description: `${ct.name} towing and roadside service in ${result.city.name}, ${result.state.name}. ${ct.description} 24/7 dispatch, flat-rate pricing.`,
+    title: `${ct.name} Tow Truck Service in ${result.city.name}, ${result.state.abbreviation} — 24/7 Dispatch`,
+    description: `${ct.name} tow truck and roadside service in ${result.city.name}, ${result.state.name} — 24/7 dispatch, flat-rate pricing. ${ct.description}`,
     alternates: { canonical: `/who-we-serve/${type}/${stateSlug}/${citySlug}` },
   };
 }

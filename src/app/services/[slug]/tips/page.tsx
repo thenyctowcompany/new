@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `How to Handle ${service.title} in NYC — Step-by-Step Guide & Pricing`,
-    description: `Emergency 101 and full how-to for ${service.title.toLowerCase()} in NYC. What to do right now, common causes, flat-rate pricing, do's and don'ts, and NYC-specific FAQs from The NYC Towing Service dispatch team.`,
+    title: `${service.title} in NYC — Complete Guide, Pricing & 24/7 Dispatch`,
+    description: `${service.title} in NYC — complete guide. Emergency 101, common causes, flat-rate pricing, do's and don'ts, and NYC-specific FAQs from The NYC Towing Service dispatch team.`,
     alternates: { canonical: `/services/${slug}/tips` },
   };
 }
@@ -93,8 +93,8 @@ export default async function ServiceTipsPage({ params }: { params: Promise<{ sl
             })),
           }),
           articleSchema({
-            title: `How to Handle ${service.title} in NYC — Step-by-Step Guide & Pricing`,
-            description: `Emergency 101 and full how-to for ${service.title.toLowerCase()} in NYC.`,
+            title: `${service.title} in NYC — Complete Guide, Pricing & 24/7 Dispatch`,
+            description: `${service.title} in NYC — complete guide. Emergency 101 and full how-to for ${service.title.toLowerCase()} in NYC.`,
             url: `/services/${service.slug}/tips`,
             section: category.label,
             author: "The NYC Towing Service Dispatch",

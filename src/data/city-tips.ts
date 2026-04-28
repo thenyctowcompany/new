@@ -195,8 +195,8 @@ export function generateCityTips(cityName: string, stateName: string, stateAbbr:
   const cl = cityName.toLowerCase();
 
   return {
-    title: `${cityName} Towing & Roadside Guide — Tips & Pricing — NYC ${stateName}`,
-    metaDescription: `Local guide to towing and roadside assistance in ${cityName}, ${stateName}. What to do when you break down, pricing, common scenarios, NYC tow pound info, and how to book fast service.`,
+    title: `${cityName} Tow Truck Guide — Pricing, Tips & 24/7 Dispatch in ${cityName}, ${stateName}`,
+    metaDescription: `${cityName} tow truck guide — pricing, what to do when you break down, common scenarios, NYC tow pound info, and how to book 24/7 dispatch in ${cityName}, ${stateName}.`,
     slug: `towing-in-${cl.replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")}-guide-and-pricing`,
 
     sections: [

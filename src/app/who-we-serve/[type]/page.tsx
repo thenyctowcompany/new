@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const ct = CUSTOMER_TYPES.find((c) => c.slug === type);
   if (!ct) return {};
   return {
-    title: `NYC Towing & Roadside for ${ct.name} — The NYC Towing Service`,
+    title: `NYC Tow Truck & Roadside Service for ${ct.name} — 24/7 Dispatch`,
     description: `${ct.description} 24/7 dispatch across all 5 NYC boroughs with flat-rate pricing.`,
     alternates: { canonical: `/who-we-serve/${type}` },
   };

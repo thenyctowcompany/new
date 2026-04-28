@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.title} in NYC — The NYC Towing Service`,
-    description: `${service.description} Flat-rate pricing, 24/7 dispatch, 20–40 min arrival across all 5 boroughs.`,
+    title: `${service.title} in NYC — 24/7 Tow Truck Near Me, All Boroughs`,
+    description: `${service.title} in NYC — 24/7 tow truck dispatch near you. ${service.description} Flat-rate pricing, 20–40 min arrival across all 5 boroughs.`,
     alternates: { canonical: `/services/${slug}` },
   };
 }

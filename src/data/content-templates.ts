@@ -9,8 +9,8 @@ export function statePageContent(stateName: string, stateAbbr: string, cities: {
   const sc = SERVICES.length;
 
   return {
-    title: `Towing & Roadside in ${stateName} — The NYC Towing Service`,
-    metaDescription: `24/7 towing and roadside assistance across ${cities.length}+ ${stateName} neighborhoods. Light-duty, heavy-duty, flatbed, battery, tire, lockout, and gas. Flat-rate pricing, 20–40 min arrival, no hidden fees. Call ${PHONE}.`,
+    title: `${stateName} Tow Truck Service Near Me — 24/7 Towing in ${stateName}, NYC`,
+    metaDescription: `${stateName} tow truck service near you — 24/7 dispatch across ${cities.length}+ ${stateName} neighborhoods. Light-duty, heavy-duty, flatbed, battery, tire, lockout, gas. Flat-rate pricing, 20–40 min arrival. Call ${PHONE}.`,
     heroSubtitle: `${cities.length} ${stateName} Neighborhoods Covered`,
     sections: [
       {
@@ -89,8 +89,8 @@ export function cityPageContent(cityName: string, stateName: string, stateAbbr: 
   const nearbyCities = otherCities.slice(0, 8);
 
   return {
-    title: `Towing & Roadside in ${cityName}, ${stateName} — The NYC Towing Service`,
-    metaDescription: `24/7 towing and roadside service in ${cityName}, ${stateName}. Light-duty, flatbed, battery, tire, lockout, gas. Flat-rate pricing, 20–40 min arrival. Call ${PHONE}.`,
+    title: `${cityName} Tow Truck Service Near Me — 24/7 Towing in ${cityName}, ${stateName}`,
+    metaDescription: `${cityName} tow truck service near you — 24/7 dispatch covering ${cityName}, ${stateName}. Light-duty, flatbed, battery, tire, lockout, gas. Flat-rate pricing, 20–40 min arrival. Call ${PHONE}.`,
     heroSubtitle: `24/7 Towing & Roadside in ${cityName}`,
     sections: [
       {
@@ -189,8 +189,8 @@ export function cityServicePageContent(cityName: string, stateName: string, stat
   const svcLower = service.title.toLowerCase();
 
   return {
-    title: `${service.title} in ${cityName}, ${stateName} — The NYC Towing Service`,
-    metaDescription: `${service.title} in ${cityName}, ${stateName}. Flat-rate pricing, 24/7 dispatch, 20–40 min arrival. Call ${PHONE}.`,
+    title: `${service.title} in ${cityName}, ${stateName} — 24/7 Tow Truck Near Me`,
+    metaDescription: `${service.title} in ${cityName}, ${stateName} — 24/7 tow truck dispatch near you. Flat-rate pricing, 20–40 min arrival, licensed and insured. Call ${PHONE}.`,
     heroSubtitle: `${service.title} in ${cityName} — 24/7`,
     sections: [
       {

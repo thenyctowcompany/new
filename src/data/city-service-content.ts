@@ -657,9 +657,9 @@ export function cityServicePageContentV2(
   });
 
   return {
-    title: `${service.title} in ${cityName}, ${stateName} — The NYC Towing Service`,
-    metaDescription: `${service.title} in ${cityName}, ${stateName}. Flat-rate pricing, 24/7 dispatch, 20–40 min arrival. Call ${PHONE}.`,
-    heroSubtitle: `${service.title} in ${cityName} — 24/7`,
+    title: `${service.title} in ${cityName}, ${stateName} — 24/7 Tow Truck Near Me`,
+    metaDescription: `${service.title} in ${cityName}, ${stateName} — 24/7 tow truck dispatch near you. Flat-rate pricing, 20–40 min arrival, licensed and insured. Call ${PHONE}.`,
+    heroSubtitle: `${service.title} in ${cityName} — 24/7 Dispatch`,
     sections: [
       sec("intro", [INTRO_P1, INTRO_P2, INTRO_P3, INTRO_P4]),
       sec("howItWorks", [HOW_P1, HOW_P2, HOW_P3, HOW_P4, HOW_P5]),

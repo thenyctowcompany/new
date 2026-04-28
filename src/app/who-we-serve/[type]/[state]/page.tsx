@@ -38,8 +38,8 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   if (isServiceSlug(stateOrService)) {
     const svc = SERVICES.find((s) => s.slug === stateOrService)!;
     return {
-      title: `${svc.title} for ${ct.name} — The NYC Towing Service Towing & Roadside`,
-      description: `${svc.title} specifically for ${ct.name.toLowerCase()}. ${svc.description} 24/7 NYC dispatch, flat-rate pricing.`,
+      title: `${svc.title} for ${ct.name} in NYC — 24/7 Tow Truck Dispatch, All Boroughs`,
+      description: `${svc.title} for ${ct.name.toLowerCase()} in NYC — 24/7 dispatch, flat-rate pricing, all 5 boroughs. ${svc.description}`,
       alternates: { canonical: `/who-we-serve/${type}/${stateOrService}` },
     };
   }
@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const state = getStateBySlug(stateOrService);
   if (!state) return {};
   return {
-    title: `Towing & Roadside for ${ct.name} in ${state.name} — The NYC Towing Service`,
-    description: `${ct.name} towing and roadside service in ${state.cities.length} ${state.name} neighborhoods. ${ct.description} 24/7 dispatch, flat-rate pricing.`,
+    title: `${ct.name} Tow Truck Service in ${state.name}, NYC — 24/7 Dispatch`,
+    description: `${ct.name} tow truck and roadside service across ${state.cities.length} ${state.name} neighborhoods — 24/7 dispatch, flat-rate pricing. ${ct.description}`,
     alternates: { canonical: `/who-we-serve/${type}/${stateOrService}` },
   };
 }

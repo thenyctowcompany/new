@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     const state = getStateBySlug(stateSlug);
     if (!state) return {};
     return {
-      title: `Towing in ${state.name}, NYC — Complete Guide & Pricing`,
-      description: `Everything ${state.name} drivers need to know about towing and roadside service — local pricing, common breakdowns, and how to call dispatch.`,
+      title: `${state.name} Tow Truck Guide — Pricing & Local Dispatch Tips, NYC`,
+      description: `${state.name} tow truck guide — pricing, common breakdowns, and how to call 24/7 dispatch fast. Everything ${state.name} drivers need to know about towing and roadside service.`,
       alternates: { canonical: `/locations/${stateSlug}/${citySlug}` },
     };
   }
