@@ -48,7 +48,7 @@ export default function HomePage() {
             24/7 Towing & Roadside — All Five Boroughs
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">NYC Towing</span> Service
+            24/7 <span className="gradient-text">NYC Tow Truck</span> Service Near You — All 5 Boroughs
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Stranded in Manhattan, Brooklyn, Queens, the Bronx, or Staten Island? We dispatch from trucks already staged in every borough. Light-duty, flatbed, roadside, and heavy-duty — flat-rate pricing quoted before we dispatch. No NYC surcharge. No storage fees. No after-hours markup.

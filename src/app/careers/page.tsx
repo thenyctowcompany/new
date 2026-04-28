@@ -4,7 +4,7 @@ import { EMAIL, CITY_COUNT, STATE_COUNT } from "@/data/content";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Drivers & Careers — The NYC Towing Service",
+  title: "NYC Tow Truck Driver Jobs Hiring Now — W-2 Employment, All Boroughs",
   description: "Hiring tow drivers, dispatchers, and heavy-duty operators across all 5 NYC boroughs. W-2 employment, competitive pay, full benefits for full-time. CDL holders welcome.",
   alternates: { canonical: "/careers" },
 };
@@ -23,7 +23,7 @@ export default function CareersPage() {
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">W-2 Employment — Full Benefits — NYC Only</p>
-          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Tow Truck</span> Driver Jobs</h1>
+          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Tow Truck Driver Jobs</span> Hiring Now — W-2 Employment, All Boroughs</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">Hiring across all {STATE_COUNT} boroughs and {CITY_COUNT}+ neighborhoods. Tow drivers, dispatchers, heavy-duty operators. W-2, not gig. Competitive pay, full benefits for full-time.</p>
         </div>
       </section>

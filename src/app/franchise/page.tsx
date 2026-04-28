@@ -4,7 +4,7 @@ import { EMAIL } from "@/data/content";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Join Our Fleet — Owner-Operator and Partnership Opportunities",
+  title: "NYC Tow Truck Franchise Opportunities — Owner-Operator Partnerships",
   description: "Experienced tow operators, owner-operators, and established shops: join The NYC Towing Service fleet. Dispatch, insurance, branding, and lead flow — you keep control of your trucks.",
   alternates: { canonical: "/franchise" },
 };
@@ -23,7 +23,7 @@ export default function FranchisePage() {
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Partnership Opportunities</p>
-          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Towing</span> Franchise Opportunities</h1>
+          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Tow Truck Franchise Opportunities</span> — Owner-Operator Partnerships</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">For experienced tow operators, owner-operators, and established NYC shops. Plug into our dispatch, brand, and lead flow while keeping operational control of your trucks.</p>
         </div>
       </section>

@@ -198,13 +198,6 @@ export function localBusinessSchemaPerOffice(office: Office) {
       "@id": `${SITE_URL}/#organization`,
       name: BRAND_NAME,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: RATING,
-      reviewCount: REVIEW_COUNT.replace(/\D/g, "") || "300",
-      bestRating: "5",
-      worstRating: "1",
-    },
   };
 }
 
@@ -475,6 +468,8 @@ export interface JobPostingInput {
   baseSalaryMin?: number;
   baseSalaryMax?: number;
   baseSalaryUnit?: "HOUR" | "YEAR" | "MONTH";
+  /** Optional borough office to fill streetAddress + postalCode. */
+  office?: Office;
 }
 
 export function jobPostingSchema(input: JobPostingInput) {
@@ -508,8 +503,10 @@ export function jobPostingSchema(input: JobPostingInput) {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
+        ...(input.office?.address ? { streetAddress: input.office.address } : {}),
         addressLocality: locality,
         addressRegion: "NY",
+        ...(input.office?.zip ? { postalCode: input.office.zip } : {}),
         addressCountry: "US",
       },
       geo: {

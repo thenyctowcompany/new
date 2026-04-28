@@ -82,7 +82,7 @@ export default async function CityPage({ params }: { params: Promise<{ state: st
           <div className="relative mx-auto max-w-5xl px-6 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Towing & Roadside Guide — {state.name}, NYC</p>
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-              {state.name} <span className="gradient-text">Towing Guide</span>
+              {state.name} <span className="gradient-text">Tow Truck Guide</span> — Pricing &amp; Local Dispatch Tips
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
               Everything {state.name} drivers need to know — pricing, common breakdown scenarios, and how to call dispatch fast.
@@ -181,7 +181,7 @@ export default async function CityPage({ params }: { params: Promise<{ state: st
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">{content.heroSubtitle}</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">{city.name}</span> Towing, {state.name}
+            <span className="gradient-text">{city.name} Tow Truck Service</span> Near Me — 24/7 Towing in {city.name}, {state.name}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             24/7 dispatch covering {city.name}. Flat-rate pricing, 20–40 minute typical arrival, licensed and insured.

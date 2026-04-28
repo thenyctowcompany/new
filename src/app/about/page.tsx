@@ -42,7 +42,7 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">The Local Operator National Networks Call</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            About <span className="gradient-text">The NYC Towing Service</span>
+            About <span className="gradient-text">The NYC Towing Service</span> — Licensed 24/7 Tow Operator
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             A licensed NYC DCWP tow operator running 24/7 across all five boroughs. We&apos;re what national roadside networks subcontract to when they do the job right — and what NYC drivers call directly to skip the dispatch markup.

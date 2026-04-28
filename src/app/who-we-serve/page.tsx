@@ -5,7 +5,7 @@ import { CtaButtons } from "@/components/CtaButtons";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Who We Serve — Stranded Motorists, Fleets, Body Shops, Property Managers, and More",
+  title: "NYC Tow Truck Customers We Serve — Drivers, Fleets, Body Shops & Property Managers",
   description: `NYC towing and roadside service for ${CUSTOMER_TYPES.length} customer types — stranded drivers, fleets, insurance, body shops, property managers, EV owners, commercial trucking, and more.`,
   alternates: { canonical: "/who-we-serve" },
 };
@@ -34,7 +34,7 @@ export default function WhoWeServePage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">{CUSTOMER_TYPES.length} Customer Types — All 5 NYC Boroughs</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">NYC Towing Customers</span> We Serve
+            <span className="gradient-text">NYC Tow Truck Customers</span> We Serve — Drivers, Fleets, Body Shops &amp; More
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             From stranded commuters to commercial fleet managers, body shops to property managers, EV owners to insurance adjusters — we dispatch the right truck for every type of customer.

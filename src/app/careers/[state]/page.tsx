@@ -46,7 +46,7 @@ export default async function StateJobsPage({ params }: { params: Promise<{ stat
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Now Hiring — {state.cities.length} {state.name} Neighborhoods</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">{state.name}</span> Tow Truck Driver Jobs
+            <span className="gradient-text">{state.name} Tow Truck Driver Jobs</span> Hiring Now — W-2, Full Benefits
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Tow drivers, dispatchers, and heavy-duty operators for our {state.name} hub. W-2 employment, full benefits for full-time, competitive pay. CDL holders welcome.

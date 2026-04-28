@@ -116,7 +116,7 @@ export default async function ServiceTipsPage({ params }: { params: Promise<{ sl
             Emergency 101 & Step-by-Step Guide
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            {service.title} <span className="gradient-text">NYC</span> — Guide & Pricing
+            {service.title} in <span className="gradient-text">NYC</span> — Complete Guide, Pricing &amp; 24/7 Dispatch
           </h1>
           <p className="mt-4 text-xl font-bold text-teal-200 font-heading">{service.subtitle}</p>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">

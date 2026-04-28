@@ -56,7 +56,7 @@ export default async function CustomerTypePage({ params }: { params: Promise<{ t
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Towing & Roadside for {ct.name}</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            NYC Towing & Roadside for <span className="gradient-text">{ct.name}</span>
+            NYC Tow Truck &amp; Roadside Service for <span className="gradient-text">{ct.name}</span> — 24/7 Dispatch
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">{ct.description}</p>
           <CtaButtons variant="dark" />

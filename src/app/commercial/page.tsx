@@ -5,7 +5,7 @@ import { SERVICES } from "@/data/services";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Fleet & Commercial Towing in NYC — The NYC Towing Service",
+  title: "NYC Commercial Fleet Towing — 24/7 Heavy-Duty Dispatch & Net-30 Billing",
   description: "Dedicated commercial towing accounts for NYC fleets — DSPs, rideshare, delivery, rental, contractor fleets, body shops, and property managers. Priority dispatch, consistent drivers, net-30 billing.",
   alternates: { canonical: "/commercial" },
 };
@@ -26,7 +26,7 @@ export default function CommercialPage() {
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Fleet & Commercial Towing Accounts</p>
-          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Commercial</span> Fleet Towing</h1>
+          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading"><span className="gradient-text">NYC Commercial Fleet Towing</span> — 24/7 Heavy-Duty Dispatch</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">DSPs, rideshare operators, delivery fleets, rental companies, contractor fleets, body shops, and property managers. Priority dispatch, consistent drivers, net-30 billing, and heavy-duty capability across all five boroughs.</p>
           <CtaButtons variant="dark" />
         </div>

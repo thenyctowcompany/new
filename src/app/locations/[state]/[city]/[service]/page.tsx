@@ -79,7 +79,7 @@ export default async function CityServicePage({ params }: { params: Promise<{ st
           <div className="relative mx-auto max-w-5xl px-6 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Towing Guide — {city.name}, {state.name}</p>
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-              {city.name} <span className="gradient-text">Towing Guide</span>
+              {city.name} <span className="gradient-text">Tow Truck Guide</span> — Pricing &amp; Local Dispatch Tips
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
               Local tips, pricing, and common breakdown scenarios specific to {city.name}, {state.name}.
@@ -197,7 +197,7 @@ export default async function CityServicePage({ params }: { params: Promise<{ st
             {content.heroSubtitle}
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">{service.title}</span> in {city.name}
+            <span className="gradient-text">{service.title}</span> in {city.name}, {state.name} — 24/7 Tow Truck Near Me
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             {service.description} 24/7 dispatch in {city.name}, typical 20–40 minute arrival, flat-rate pricing.

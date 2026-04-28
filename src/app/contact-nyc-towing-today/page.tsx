@@ -80,7 +80,7 @@ export default function ContactPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Get in Touch</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">Contact NYC Towing</span>
+            <span className="gradient-text">Contact NYC Tow Truck Service</span> — 24/7 Dispatch in All 5 Boroughs
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             For immediate tow or roadside dispatch, call <a href={PHONE_HREF} className="underline text-white hover:text-teal-200">{PHONE}</a> — the phone is always fastest. For questions, partnerships, fleet accounts, or media, use the form below. For service requests, use the <Link href="/book-towing-service-today" className="underline text-white hover:text-teal-200">request page</Link>.

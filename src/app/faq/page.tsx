@@ -6,7 +6,7 @@ import { FAQ } from "@/data/content";
 import { JsonLd, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "NYC Towing FAQ — Pricing, AWD, EV, Impound, and 30+ More Questions",
+  title: "NYC Tow Truck FAQ — Pricing, AWD, EV, Impound & 30+ More Questions",
   description: "Common questions about NYC towing and roadside service. Pricing, flatbed vs. wheel-lift, AWD and EV procedures, impound recovery, fleet accounts, insurance billing.",
   alternates: { canonical: "/faq" },
 };
@@ -64,7 +64,7 @@ export default function FAQPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Common Questions About NYC Towing</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">NYC Towing FAQ</span>
+            <span className="gradient-text">NYC Tow Truck FAQ</span> — Pricing, Procedures &amp; 24/7 Dispatch Answers
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Pricing, AWD and EV procedures, impound recovery, fleet accounts, insurance billing. Honest answers, no dropdowns, no games.

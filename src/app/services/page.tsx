@@ -6,7 +6,7 @@ import { CtaButtons } from "@/components/CtaButtons";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "NYC Towing & Roadside Services — Light-Duty, Flatbed, Heavy-Duty, Roadside",
+  title: "NYC Tow Truck & Roadside Services Near Me — 24/7 Dispatch, All Boroughs",
   description: "Full towing and roadside service across all 5 NYC boroughs. Light-duty, flatbed (AWD / EV / luxury), heavy-duty, motorcycle, accident recovery, and full roadside. Flat-rate pricing, 24/7 dispatch.",
   alternates: { canonical: "/services" },
 };
@@ -43,7 +43,7 @@ export default function ServicesPage() {
             {SERVICES.length} Services — One NYC Phone Number
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            NYC Towing & <span className="gradient-text">Roadside Services</span>
+            NYC Tow Truck & <span className="gradient-text">Roadside Services Near Me</span> — 24/7 Dispatch
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Light-duty tows, flatbed for AWD and EVs, heavy-duty for commercial rigs, motorcycle transport, accident recovery, and every common roadside call. Flat-rate pricing, 24/7, across all {STATE_COUNT} boroughs and {CITY_COUNT}+ neighborhoods.

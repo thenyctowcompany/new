@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { JobApplicationForm } from "@/components/JobApplicationForm";
+import { getOfficeByState } from "@/data/offices";
 import { JsonLd, breadcrumbSchema, jobPostingSchema } from "@/lib/schema";
 
 export default function ApplyPage() {
+  const office = getOfficeByState("manhattan");
   return (
     <>
       <JsonLd
@@ -25,6 +27,7 @@ export default function ApplyPage() {
             baseSalaryMin: 22,
             baseSalaryMax: 45,
             baseSalaryUnit: "HOUR",
+            office,
           }),
         ]}
       />
@@ -33,7 +36,7 @@ export default function ApplyPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">W-2 Employment — Full Benefits — NYC All Boroughs</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            Apply — <span className="gradient-text">NYC Tow Truck Driver Job</span>
+            Apply for an <span className="gradient-text">NYC Tow Truck Driver Job</span> — Now Hiring W-2 Drivers
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Tow drivers, dispatchers, and heavy-duty operators. W-2 employment, not gig. Competitive pay, full benefits for full-time, paid training. CDL holders welcome. Applications reviewed within 48 hours.

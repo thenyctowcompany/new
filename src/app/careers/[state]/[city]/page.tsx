@@ -52,6 +52,7 @@ export default async function CityJobsPage({ params }: { params: Promise<{ state
       baseSalaryMin: 22,
       baseSalaryMax: 45,
       baseSalaryUnit: "HOUR",
+      office,
     }),
   ];
   if (office) cityJobsSchemas.push(localBusinessSchemaPerOffice(office));
@@ -64,7 +65,7 @@ export default async function CityJobsPage({ params }: { params: Promise<{ state
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Now Hiring — {city.name}, {state.name}</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">{city.name}</span> Tow Truck Driver Jobs
+            <span className="gradient-text">{city.name} Tow Truck Driver Jobs</span> Hiring Now — W-2, Full Benefits
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Drivers dispatched from our {state.name} hub cover {city.name} every day. W-2 employment, full benefits, competitive pay, and paid training.

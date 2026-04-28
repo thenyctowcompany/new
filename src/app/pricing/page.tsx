@@ -5,7 +5,7 @@ import { PHONE, PHONE_HREF, PRICING } from "@/data/content";
 import { JsonLd, breadcrumbSchema, SITE_URL, BRAND_NAME } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "NYC Towing & Roadside Pricing — Flat-Rate, Quoted Before Dispatch",
+  title: "NYC Tow Truck Prices — Flat-Rate Pricing, No NYC Surcharge, No Markup",
   description: "Flat-rate NYC towing and roadside pricing. Light-duty from $125 base, flatbed from $175 base, roadside flat $85. No NYC surcharge, no after-hours markup, no storage fees on same-day drops.",
   alternates: { canonical: "/pricing" },
 };
@@ -56,7 +56,7 @@ export default function PricingPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">Flat-Rate. Quoted On The Phone. No Surprises.</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">NYC Towing Prices</span>
+            <span className="gradient-text">NYC Tow Truck Prices</span> — Flat-Rate, No NYC Surcharge
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             No NYC surcharge. No after-hours markup. No storage fees on same-day drops. The rate you hear on the phone is the rate you pay.

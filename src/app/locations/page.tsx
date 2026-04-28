@@ -38,7 +38,7 @@ export default function LocationsPage() {
             5 Borough Hubs &bull; {TOTAL_CITIES}+ Neighborhoods &bull; 24/7
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            NYC Towing <span className="gradient-text">Coverage Areas</span>
+            NYC Tow Truck <span className="gradient-text">Coverage Areas</span> — All 5 Boroughs &amp; {TOTAL_CITIES}+ Neighborhoods
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Dispatch hubs in every borough. Trucks staged locally for fast arrival. 24/7 service across {TOTAL_CITIES}+ NYC neighborhoods.

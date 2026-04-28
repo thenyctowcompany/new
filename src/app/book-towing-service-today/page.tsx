@@ -70,7 +70,7 @@ export default function BookPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">24/7 Dispatch &bull; Flat-Rate Pricing &bull; 20–40 Min Arrival</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            <span className="gradient-text">Book NYC Towing</span>
+            <span className="gradient-text">Book NYC Tow Truck Service Online</span> — 24/7 Same-Day Dispatch
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Fill out the form and dispatch will call you. For immediate breakdowns, call <a href={PHONE_HREF} className="text-white underline">{PHONE}</a> directly — the phone is always the fastest path.

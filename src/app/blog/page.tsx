@@ -5,7 +5,7 @@ import { BLOG_POSTS } from "@/data/blog-posts";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "NYC Towing Blog — Breakdowns, Flatbeds, EVs, and How to Call Dispatch",
+  title: "NYC Tow Truck Blog — Guides on Towing, Flatbeds, EVs, Pricing & Roadside",
   description: `${BLOG_POSTS.length} guides on NYC towing and roadside service. What to do when you break down, flatbed vs. wheel-lift, dead-battery winter calls, pound recovery, and more.`,
   alternates: { canonical: "/blog" },
 };
@@ -35,7 +35,7 @@ export default function BlogPage() {
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">{BLOG_POSTS.length} Guides on NYC Towing & Roadside</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            NYC Towing <span className="gradient-text">Blog</span>
+            <span className="gradient-text">NYC Tow Truck Blog</span> — Guides on Towing, Pricing &amp; Roadside Service
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             Practical guides on NYC breakdowns, flatbed vs. wheel-lift, AWD and EV procedures, impound recovery, fleet accounts, and dealing with NYC tow pricing. Every article has an audio reader — click Listen.

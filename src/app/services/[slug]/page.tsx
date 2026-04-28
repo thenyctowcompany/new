@@ -133,7 +133,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {category.label} — Service #{serviceIndex + 1} of {SERVICES.length}
           </p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            {service.title} <span className="gradient-text">NYC</span>
+            {service.title} <span className="gradient-text">NYC</span> — 24/7 Tow Truck Near Me, All Boroughs
           </h1>
           <p className="mt-4 text-2xl font-bold text-teal-200 font-heading">
             {service.subtitle}

@@ -78,7 +78,7 @@ export default async function TypeStatePage({ params }: { params: Promise<{ type
           <div className="relative mx-auto max-w-5xl px-6 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">{svc.title} for {ct.name}</p>
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-              <span className="gradient-text">{svc.title}</span> for {ct.name} in NYC
+              <span className="gradient-text">{svc.title}</span> for {ct.name} in NYC — 24/7 Dispatch, All Boroughs
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">{svc.description}</p>
             <CtaButtons variant="dark" />
@@ -144,7 +144,7 @@ export default async function TypeStatePage({ params }: { params: Promise<{ type
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-teal-200 font-cta">{ct.name} Towing & Roadside in {state.abbreviation}</p>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl font-heading">
-            {ct.name} Towing in <span className="gradient-text">{state.name}</span>
+            {ct.name} Tow Truck Service in <span className="gradient-text">{state.name}</span>, NYC — 24/7 Dispatch
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             {ct.description} Serving {state.cities.length} neighborhoods across {state.abbreviation}.
